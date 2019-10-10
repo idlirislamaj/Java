@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SecondSmallestWithUserInput",
+            "request": "launch",
+            "mainClass": "SecondSmallestWithUserInput",
+            "projectName": "Java_1bc7b48"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FizzBuzz",
+            "request": "launch",
+            "mainClass": "FizzBuzz",
+            "projectName": "Java_1bc7b48"
+        }
+    ]
+}

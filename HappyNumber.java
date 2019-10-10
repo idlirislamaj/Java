@@ -22,7 +22,7 @@ public class HappyNumber {
     public static int HappyNum(int num){
         int rem = 0;
         int sum = 0;
-
+        
         //Square digits of the number until num is 0 then return sum
         while(num>0){
             rem =num%10;
