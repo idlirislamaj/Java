@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SecondSmallest",
+            "request": "launch",
+            "mainClass": "SecondSmallest",
+            "projectName": "Java_1bc7b48"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BringLastAtFirstPos",
+            "request": "launch",
+            "mainClass": "BringLastAtFirstPos",
+            "projectName": "Java_1bc7b48"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SwapLastWithFirst",
             "request": "launch",
             "mainClass": "SwapLastWithFirst",
