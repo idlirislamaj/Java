@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 //This simple program finds second smallest of a given array
     public class SecondSmallest {
@@ -14,6 +15,6 @@
                   secondSmallestNumber = elements[i];
               }
           }
-          System.out.println(secondSmallestNumber);
+          System.out.println("Second Smallest number of the array "+ Arrays.toString(elements)+ " is "  +secondSmallestNumber);
         }
      }
