@@ -23,8 +23,7 @@ public class ListRevert {
             listOfNames.add(name);
         }
         while(!name.equals(""));
-        System.out.println("Here is the List before Reverting it");
-        System.out.println(listOfNames);
+        System.out.println("Here is the List before Reverting it" + listOfNames);
         System.out.println("Here is the reverted List : ");
         for (int i = listOfNames.size()-1; i > -1 ; i--) {
             listOfNamesReverted.add(index, listOfNames.get(i));
