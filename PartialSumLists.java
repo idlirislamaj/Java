@@ -7,12 +7,16 @@ public class PartialSumLists {
     public static void main(String[] args) {
 
         List<Integer> firstList = new ArrayList<>();
+        System.out.println("How many elements you want to enter to the array?");
+        Scanner numberOfElements = new Scanner(System.in);
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter 10 elements of the array ");
+        int elements = numberOfElements.nextInt();
+        System.out.println("Please enter "+ elements +" elements of the array ");
 
-        for (int i = 0; i <10 ; i++) {
+        for (int i = 0; i < elements ; i++) {
             firstList.add(i, input.nextInt());
         }
+
         System.out.println("Here is the entered array "+firstList);
 
 
