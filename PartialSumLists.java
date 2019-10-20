@@ -8,7 +8,6 @@ public class PartialSumLists {
 
         List<Integer> firstList = new ArrayList<>();
         Scanner input = new Scanner(System.in);
-        int temp;
         System.out.println("Please enter 10 elements of the array ");
 
         for (int i = 0; i <10 ; i++) {
