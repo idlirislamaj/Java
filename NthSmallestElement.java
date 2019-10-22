@@ -13,8 +13,6 @@ public class NthSmallestElement {
 
         System.out.println(nthSmallestElement(mySet, 7));
 
-
-
     }
 
 
