@@ -1,4 +1,4 @@
-
+package redischool.Lesson2;
 // This simple program get 8 numbers from user input and find the second smallest from them
 import java.util.Arrays;
 import java.util.Scanner;

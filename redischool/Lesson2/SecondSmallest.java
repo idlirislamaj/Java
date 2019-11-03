@@ -1,3 +1,5 @@
+package redischool.Lesson2;
+
 import java.util.Arrays;
 
 //This simple program finds second smallest of a given array

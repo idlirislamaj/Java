@@ -1,3 +1,5 @@
+package redischool.lesson6;
+
 import java.util.*;
 
 public class PartitionIntegersMap {

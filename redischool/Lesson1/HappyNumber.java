@@ -1,3 +1,5 @@
+package redischool.Lesson1;
+
 public class HappyNumber {
 
     public static void main(String[] args) {

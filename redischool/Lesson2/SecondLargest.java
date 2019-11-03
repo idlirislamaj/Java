@@ -1,3 +1,5 @@
+package redischool.Lesson2;
+
 import java.util.Arrays;
 // This simple program finds second largest number of a given array
 public class SecondLargest {

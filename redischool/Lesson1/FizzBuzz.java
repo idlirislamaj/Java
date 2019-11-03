@@ -1,3 +1,5 @@
+package redischool.Lesson1;
+
 public class FizzBuzz {
 
 
