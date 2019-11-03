@@ -1,32 +1,31 @@
 package redischool.lesson6;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class Translator {
-    Map<String, String> translationMap = new HashMap<>();
+    Map<String, Set<String>> translationMap = new HashMap<>();
 
-   public Translator(){
-        translationMap.put("Happy","Felice");
-        translationMap.put("World","Mondo");
-        translationMap.put("Sky","Cielo");
-        translationMap.put("Sea","Mare");
-        translationMap.put("Sun","Sole");
-    }
 
     public void addTranslation(String word, String translation){
-        translationMap.put(word,translation);
+       Set<String> translations= translationMap.getOrDefault(word.toLowerCase(), new HashSet<>());
+       translations.add(translation.toLowerCase());
+       translationMap.put(word, translations);
     }
 
-    String translate(String word){
-       String translatedword ="";
+    Set<String> translate(String word) {
+       return translationMap.getOrDefault(word.toLowerCase(), null);
+    }
 
-        for (String keyWord: translationMap.keySet()) {
-            if (word.equalsIgnoreCase(keyWord)){
-                translatedword = translationMap.get(keyWord);
-            }
+
+    void removeTranslation(String word, String translation) {
+        Set<String> translations = translationMap.get(word);
+        if (translations != null) {
+            translations.remove(translation);
         }
-        return translatedword;
     }
+
 
 }
