@@ -1,5 +1,15 @@
 package redischool.lesson6;
 import java.util.Scanner;
+//it maps keys to values / dictionary in c# both have to be objects. key used to retrieve the value.
+//hashmap most common map in java
+//keyset gets a set of keys
+// hashMap builds an array of these mini-lists.
+//array:group of same elements+ immutability=
+// predefinded size+ access via index starts with 0+ can have many dimensions+ part of java language
+//list:dynamic size+ elements can be added and removed+ get method to access using index+ has to be imported:java.util.List
+//set:same elements type+ not ordered + non redundant+ dynamic size+ elements can be added and removed+class in Java library.
+//map:group of elements of same type+key value pair+key and value may be of same type+ access to element via key(key has to be
+//unique+values dont have to be unique+ combinations of set of keys und list of value+
 
 public class Main {
     public static void main(String[] args) {
