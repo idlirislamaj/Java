@@ -3,37 +3,45 @@ package redischool.Lesson8JUnitTesting.ConvertRomanToNumbers;
 import java.util.List;
 
 public class RomanToNumbers {
-    private static final List<Mapping> MAPPINGS = List.of(
-            new Mapping("M", 1000),
-            new Mapping("CM", 900),
-            new Mapping("D", 500),
-            new Mapping("CD", 400),
-            new Mapping("C", 100),
-            new Mapping("XC", 90),
-            new Mapping("L", 50),
-            new Mapping("XL", 40),
-            new Mapping("X", 10),
-            new Mapping("IX", 9),
-            new Mapping("V", 5),
-            new Mapping("IV", 4),
-            new Mapping("I", 1));
 
-    private static class Mapping {
-        final String roman;
-        final int number;
-
-        Mapping(String roman, int number) {
-            this.roman = roman;
-            this.number = number;
-        }
+    static int value(char romanNumeral) {
+        if (romanNumeral == 'I')
+            return 1;
+        if (romanNumeral == 'V')
+            return 5;
+        if (romanNumeral == 'X')
+            return 10;
+        if (romanNumeral == 'L')
+            return 50;
+        if (romanNumeral == 'C')
+            return 100;
+        if (romanNumeral == 'D')
+            return 500;
+        if (romanNumeral == 'M')
+            return 1000;
+        return -1;
     }
 
-    public static String convert(int i) {
-        for (Mapping mapping : MAPPINGS) {
-            if (i >= mapping.number) {
-                return mapping.roman + convert(i - mapping.number);
+    public static int convertRomanToNumberMethod(String str) {
+        int res = 0;
+        for (int i = 0; i < str.length(); i++) {
+            int s1 = value(str.charAt(i));
+
+            if (i + 1 < str.length()) {
+                int s2 = value(str.charAt(i + 1));
+
+                if (s1 >= s2) {
+                    res = res + s1;
+                } else {
+                    res = res + s2 - s1;
+                    i++;
+                }
+            } else {
+                res = res + s1;
             }
         }
-        return "";
+
+        return res;
     }
+
 }
