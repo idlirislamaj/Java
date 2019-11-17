@@ -1,7 +1,5 @@
 package redischool.Lesson8JUnitTesting.ConvertRomanToNumbers;
 
-import java.util.List;
-
 public class RomanToNumbers {
 
     static int value(char romanNumeral) {
@@ -45,3 +43,4 @@ public class RomanToNumbers {
     }
 
 }
+
