@@ -5,7 +5,6 @@ import java.util.*;
 public class ComparableComparatorExample {
 
     public static void main(String[] args) {
-
         //Used comparator by Height as exercise
         //Comparable implemented in the Person Class Exercise 2
         Comparator<Person> com = new Comparator<Person>() {
