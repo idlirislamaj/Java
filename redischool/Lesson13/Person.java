@@ -1,6 +1,6 @@
 package redischool.Lesson13;
 
-public class Person implements Comparable<Person>{
+public class Person implements Comparable<Person> {
     String name;
     int age;
     double height;
